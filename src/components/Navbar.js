@@ -1,4 +1,4 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {
   // const path = window.location.pathname
@@ -16,7 +16,7 @@ export default function Navbar() {
 }
 
 function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
+  //   const resolvedPath = useResolvedPath(to);
   //   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
   return (
     <li>
